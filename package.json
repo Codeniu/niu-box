@@ -1,0 +1,35 @@
+{
+  "name": "vue3-koa",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ant-design-vue": "^2.2.6",
+    "axios": "^0.21.1",
+    "echarts": "^5.2.0",
+    "figlet": "^1.5.2",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^4.0.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^6.0.4",
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2",
+    "xlsx": "^0.17.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vite": "^2.5.2"
+  }
+}

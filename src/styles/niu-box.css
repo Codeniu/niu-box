@@ -1,0 +1,129 @@
+/* grid */
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* 屏幕宽度大于 768px 时生效 */
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* 屏幕宽度大于 1024px 时生效 */
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-margins {
+        margin: 0 15%;
+    }
+}
+
+@media only screen and (min-width: 1556px) {
+    .grid-margins {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+}
+
+.grid-margins {
+    margin-left: 15 px;
+    margin-right: 15 px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    .flex-row {
+        flex-direction: row;
+    }
+}
+
+.mb-2 {
+    margin-bottom: 5px;
+}
+
+
+/* type select */
+.multiselect {
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 40 px;
+    text-align: left;
+    color: #35495e;
+}
+
+@media (min-width: 1280px) {
+    .mr-2 {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .mb-0 {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .max-w-xs {
+        max-width: 20 rem;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* button */
+.ease-in-out {
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.duration-300 {
+    transition-duration: .3s;
+}
+
+.p-1 {
+    padding: 0.25 rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.niu-button {
+    border: none;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    line-height: inherit;
+    color: inherit;
+    background-color: transparent;
+    background-image: none;
+}
+
+.text-blueGreen {
+    --tw-text-opacity: 1;
+    color: rgba(52, 121, 125, var(--tw-text-opacity));
+}
+
+.hover\:text-blueGreenScreen:hover {
+    --tw-text-opacity: 1;
+    color: rgba(102, 152, 154, var(--tw-text-opacity));
+}
