@@ -43,11 +43,15 @@ node app.js
 
 ### 管理页面
 
+![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1fae762bbdb245a88ce9cd7b74f03e11~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+
 - [ ] 条件查询
 - [x] 数据导入
 - [x] 封面图上传（转换为Base64）
 
 ### 前台页面
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0dab51f26bac4475b28f43c89d711903~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 - [ ] 数据懒加载
 - [ ] 评分功能
