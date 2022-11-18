@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const dbCloud = 'mongodb://121.89.222.181:9011/test'
 const dbVMare = 'mongodb://localhost:27017/test'
-mongoose.connect(dbVMare, {
+mongoose.connect(dbCloud, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 })

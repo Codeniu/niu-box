@@ -1,5 +1,5 @@
 #制定node镜像的版本
-FROM node:8.9-alpine
+FROM node:14.16.1
 #声明作者
 MAINTAINER codeniu
 #移动当前目录下面的文件到app目录下
