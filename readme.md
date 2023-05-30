@@ -76,6 +76,10 @@ md5加密后
 node app.js
 ```
 
+访问
+
+hostname:3308/niu-box
+
 ### docker
 
 进入到项目目录执行：
@@ -86,4 +90,6 @@ docker build . -t codeniu/niu-box
 docker run -p 3308:3000 -d codeniu/niu-box
 ```
 
-访问: ip:3308/niu-box
+访问
+
+hostname:3308/niu-box
