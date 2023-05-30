@@ -50,7 +50,7 @@ node app.js
 
 ### 前台页面
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0dab51f26bac4475b28f43c89d711903~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
+![](https://codeniu-picbed.oss-cn-hangzhou.aliyuncs.com/picbed/20230530113509.png)
 
 - [ ] 数据懒加载
 - [ ] 评分功能
@@ -67,3 +67,23 @@ node app.js
 md5加密后
 
 202cb962ac59075b964b07152d234b70
+
+## 部署
+
+### Linux
+
+```shell
+node app.js
+```
+
+### docker
+
+进入到项目目录执行：
+
+```shell
+docker build . -t codeniu/niu-box
+
+docker run -p 3308:3000 -d codeniu/niu-box
+```
+
+访问: ip:3308/niu-box

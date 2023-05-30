@@ -33,6 +33,6 @@ router.use('/api/user', user.routes())
 router.use('/api/box', box.routes())
 app.use(router.routes())
 
-app.listen('3308', () => {
+app.listen('3000', () => {
   console.log('koa is listening in 3308')
 })
