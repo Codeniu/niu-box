@@ -93,3 +93,17 @@ docker run -p 3308:3000 -d codeniu/niu-box
 访问
 
 hostname:3308/niu-box
+
+### docker compose
+
+进入到项目目录执行：
+
+```shell
+docker compose up -d
+```
+
+如果你更改了 server\config\db.js 配置文件,单独启动web服务：
+
+```shell
+  docker-compose up -d --force-recreate web
+```

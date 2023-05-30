@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    ports:
+      - '3308:3000'
+    volumes:
+      - .:/code
+    depends_on:
+      - mongo
+
+  mongo:
+    restart: always
+    image: 'mongo:latest'
+    expose:
+      - 27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: Follow.2023
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/db:/data/db

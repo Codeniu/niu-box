@@ -1,6 +1,14 @@
 const mongoose = require('mongoose')
-const dbCloud = 'mongodb://47.96.156.194:27017/niu-box'
-const dbVMare = 'mongodb://localhost:27017/niu-box'
+
+const auth = {
+  username: 'admin',
+  password: 'Follow.2023',
+  address: '47.96.156.194:27017',
+}
+
+const dbCloud = `mongodb://admin:Follow.2023@47.96.156.194:27017/test?authSource=admin`
+const dbVMare = 'mongodb://localhost:27017/test'
+
 mongoose.connect(dbCloud, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
