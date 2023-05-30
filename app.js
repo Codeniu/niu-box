@@ -24,6 +24,7 @@ app.use(
   koajwt({
     secret: 'my_token',
   }).unless({
+    // 配置白名单
     path: [/\/api\/user\/register/, /\/api\/user\/login/, /\/api\/box\/*/],
   })
 )
@@ -32,6 +33,6 @@ router.use('/api/user', user.routes())
 router.use('/api/box', box.routes())
 app.use(router.routes())
 
-app.listen('3000', () => {
-  console.log('koa is listening in 3000')
+app.listen('3308', () => {
+  console.log('koa is listening in 3308')
 })

@@ -1,23 +1,12 @@
 <template>
   <div class="app-container">
-    <upload-excel-component
-      :on-success="handleSuccess"
-      :before-upload="beforeUpload"
-    />
+    <upload-excel-component :on-success="handleSuccess" :before-upload="beforeUpload" />
 
-    <a-table
-      :columns="tableHeader"
-      :data-source="tableData"
-      :row-key="record => record.账号"
-      style="overflow: auto"
-    />
+    <a-table :columns="tableHeader" :data-source="tableData" :row-key="record => record.账号" style="overflow: auto" />
   </div>
 
   <div>
-    <upload-html-component
-      :on-success="handleSuccess1"
-      :before-upload="beforeUpload"
-    />
+    <upload-html-component :on-success="handleSuccess1" :before-upload="beforeUpload" />
   </div>
 </template>
 
@@ -25,7 +14,7 @@
 import UploadExcelComponent from '@/components/UploadExcel.vue'
 import UploadHtmlComponent from '@/components/UploadHtml.vue'
 import { message } from 'ant-design-vue'
-import { htmlTransform } from '@/utils/htmlTransform.js'
+// import { htmlTransform } from '@/utils/htmlTransform.js'
 
 export default {
   name: 'UploadExcel',
