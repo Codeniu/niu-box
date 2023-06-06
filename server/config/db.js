@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const auth = {
   username: 'admin',
-  password: 'Follow.2023',
-  address: '47.96.156.194:27017',
+  password: '',
+  address: '',
 }
 
-const dbCloud = `mongodb://admin:Follow.2023@47.96.156.194:27017/test?authSource=admin`
+const dbCloud = 'mongodb://localhost:27017/test'
 const dbVMare = 'mongodb://localhost:27017/test'
 
 mongoose.connect(dbCloud, {
